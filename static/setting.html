@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>場面設定</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="settings">
+  	<h1 class="title">設定</h1>
+  	<form class="setting">
+  		<div class="input-group">
+  			<label for="scene">場面:</label>
+  			<select id="scene">
+  				<option value="group-discussion">グループディスカッション</option>
+  				<option value="first-meeting">初対面</option>
+  				<option value="party">合コン</option>
+  			</select>
+  		</div>
+  
+  		<div class="input-group">
+  			<label for="theme">テーマ/雰囲気:</label>
+  			<input type="text" id="theme">
+  		</div>
+  
+  		<div class="input-group">
+  			<label>人数:</label>
+  			<input type="number" id="num" min="2" max="10">
+  			<button id="num-button" class="num-button">作成する</button>
+  		</div>
+    
+  		<div id="container"></div><!-- add
+      class -->
+  
+  		<div class="button-group">
+        <a
+          id="send-button" 
+          class="send-button"
+        >  
+          送信する
+        </a>
+  		</div>
+  	</form>
+    
+    <div id="response-field" class="response-field"></div>
+  </div>
+  <div class="response">
+    <h1 class="title">グループディスカッション</h1>
+	  <div class="chat-container" id="chat-container">
+	  </div>
+  </div>
+  
+  <script type="text/javascript" src="setting.js"></script>
+</body>
+</html>
